@@ -1,0 +1,28 @@
+.nav-banner{
+    background-image: url(https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#name-nav{
+    color: white;
+}
+#name-nav:hover{
+    color: #fd562a;
+}
+.banner-head{
+    font-size: 50px;
+}
+.banner-bts{
+    border: none;
+    height: 55px;
+    width: 300px;
+    color: white;
+    background-color: #fd562a;
+    border-radius: 10px;
+}
+.banner-bts:hover{
+    background-color: #fd3903;
+}
+.head-icon{
+    height: 35px;
+}

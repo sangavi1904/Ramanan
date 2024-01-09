@@ -18,6 +18,14 @@
   font-size: 12px;
   word-spacing: 8px;
 }
+.heading4 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 14px;
+  word-spacing: 8px;
+}
 
 
 .heading5 {
@@ -36,6 +44,7 @@
   font-size: 17px;
   word-spacing: 8px;
 }
+
 
 .heading7 {
   font-family: 'Cinzel', serif;
@@ -57,6 +66,15 @@
   word-spacing: 8
 
 }
+.heading9 {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 17px;
+  word-spacing: 8px;
+}
+
 /* .technical-skills{
   background-image: url('https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg');
   background-repeat: no-repeat;
@@ -79,7 +97,7 @@
   position: relative;
   display: inline-block;
   line-height: 1;
-  font-size: 24px;
+  /* font-size: 24px; */
   text-transform: uppercase;
   margin-bottom: 0;
   margin-left: 30px;
@@ -132,16 +150,16 @@
   justify-content: space-between;
 }
 
-.card.custom-card {
+/* .card.custom-card {
 
   border: none;
 
   box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-}
+} */
 
-.custom-card:hover {
+/* .custom-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .wrap-icon{
   background-color: #fd562a;
@@ -157,4 +175,33 @@ background-color: black;
   object-fit: contain;
   display: block;
   margin: auto;
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #fd562a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #fd562a;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
