@@ -23,11 +23,11 @@ function Nav() {
                             <li class="nav-item heading6">
                                 <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#summary">About Us</a>
                             </li>
-                           
+
                             <li class="nav-item heading6 ">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technicalskill">Portfolio</a>
                             </li>
-            
+
                             <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#resume">Technical</a>
                             </li>
@@ -52,6 +52,31 @@ function Nav() {
                     </div>
                 </div>
             </nav>
+
+            <section className='container'>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <div className='py-3 my-3'>
+                            <p>Hello, I'm</p>
+                            <h1>Kalyana VenkataRamanan</h1>
+                            <p>A passionate Full Stack Engineer from Bangalore!</p>
+
+                            <button>Contact Me in Whatsapp</button>
+
+                        </div>
+                    </div>
+                    <div className='col-md-6 bg-body-tertiary'>
+                        <div className='py-5 my-5'>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
         </section>
     )
 }

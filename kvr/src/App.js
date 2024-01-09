@@ -1,5 +1,8 @@
 
+import './App.css';
 import './Diwa.css';
+import './Jagan.css'
+
 // import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Nav from './Components/Nav';
