@@ -1,5 +1,6 @@
 
 import './App.css';
+import Footer from './Components/Footer';
 
 // import Career from './Components/Career';
 import Nav from './Components/Nav';
@@ -21,9 +22,11 @@ function App() {
 
 
 
-        <Route path="/" element={<Nav/>}/>
+        {/* <Route path="/" element={<Nav/>}/> */}
 
         {/* <Route path="/" element={<Career/>}/> */}
+        <Route path="/" element={<Footer/>}/>
+
 
       </Routes>
       </BrowserRouter>
