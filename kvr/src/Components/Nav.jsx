@@ -21,42 +21,46 @@ function Nav() {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href='#home'>Home</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#aboutus">About Us</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#portfolio">Portfolio</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technical">Technical</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#work">Work</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#testimonial">Testimonial</a>
                             </li>
 
-                            <li class="nav-item border-end">
+                            <li class="nav-item border-end heading6">
                                 <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#contact">Contact</a>
                             </li>
 
-                            <li class="nav-item px-2 pt-1">
+                           <a href='https://www.instagram.com/kalyana_venkata_ramanan/'>
+                           <li class="nav-item px-2 pt-1">
                                 {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                                 <img src={Instaicon} alt="" className='head-icon' />
                             </li>
+                           </a>
+                            <a href='https://www.linkedin.com/in/kalyan-durai-664390274/'>
                             <li class="nav-item pt-1">
                                 {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                                 <img src={Linkedin} alt="img-fluid" className='head-icon' />
                             </li>
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -65,24 +69,33 @@ function Nav() {
 
             {/* Banner-Start */}
         
-            <section className='container'>
+            <section className='container' id='home'>
                 <div className='row py-5 mt-2'>
 
                     <div className='col-md-6 d-flex justify-content-center align-items-center'>
-                        <div className=''>
-                            <h5 className='text-light'>Hello, I'm</h5>
-                            <h1 className='text-light banner-head'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
-                            <h5 className='text-light'>A passionate Full Stack Engineer from Bangalore!</h5>
+                        <div>
+                        {/* className='col-6 col-12 text-center col-md-start' */}
+                            <h5 className='text-light heading9 fw-bold fs-5'>Hello, I'm</h5>
+                            <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
+                            <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
                             <div className='py-4 my-4'>
-                                <button className='banner-bts fw-bold fs-5'>Contact Me in Whatsapp</button>
+                                <button className='banner-bts fw-bold fs-5 heading5'>Contact Me in Whatsapp</button>
                             </div>
+                            
                         </div>
                     </div>
 
                     <div className='col-md-6 text-center'>
                         <div className='pb-4 mb-4'>
                             <img src={Ramanan} alt="" className='img-fluid rounded-3' />
+                            <div class="layer-infor-inner d-flex align-items-center">
+			                <div class="info-featured">
+					20<sub>+</sub>                </div>
+						                <div class="info-title">
+					Total <br/>Projects                </div>
+			        </div>
                         </div>
+                        
                     </div>
 
                 </div>
@@ -94,8 +107,8 @@ function Nav() {
             <section className='container'>
                 <div className='text-center py-4 my-4'>
 
-                    <h3>CAREER OBJECTIVE</h3>
-                    <p className='pt-3 mt-2'> An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
+                <h3 className='text-center mb-3 heading6 fs-2 mt-3 ' style={{ color: "#fd562a" }}>Career Objective</h3>
+                    <p className='pt-2 mt-1 heading4'> An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
                         API Testing, and Automation Testing (Selenium Web driver with JAVA), wants to be associated with a
                         progressive organization that can provide me with a dynamic work sphere, challenging assignments with
                         responsibility that encourage creativity, and keeps in touch with the latest technologies/ trends in
