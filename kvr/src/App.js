@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Home from './Components/Home';
+// import './Diwa.css';
+
+// import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Technical from './Components/Technical';
 
@@ -10,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Home/>}/> */}
-        <Route path='/' element ={<Technical/>}/>
+        <Route path="/" element={<Technical/>}/>
       </Routes>
       </BrowserRouter>
      
