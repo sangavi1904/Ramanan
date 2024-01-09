@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 14px;
+  
+  word-spacing: 8px;
+}
+.heading5{
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 17px;
+  word-spacing: 8px;
+}
