@@ -1,14 +1,15 @@
 
 import './App.css';
-// import './Diwa.css';
+
+// import Career from './Components/Career';
+import Nav from './Components/Nav';
+
+
+import './Diwa.css';
 
 // import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Technical from './Components/Technical';
-import Details from './Components/Details';
-import './Jagan.css'
-import Experience from './Components/Experience';
-
 
 function App() {
   return (
@@ -16,11 +17,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Home/>}/> */}
-        {/* <Route path="/" element={<Technical/>}/> */}
-        {/* <Route path="/" element={<Details/>}/> */}
-        <Route path="/" element={<Experience/>}/>
-
-
+        <Route path="/" element={<Technical/>}/>
       </Routes>
       </BrowserRouter>
      
