@@ -7,10 +7,9 @@
 .heading3 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: .2px;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 2;
-  font-size: 14px;
-
+  font-size: 18px;
   word-spacing: 8px;
 }
 
@@ -95,6 +94,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .card.custom-card {
@@ -111,4 +111,8 @@
 .wrap-icon{
   background-color: #fd562a;
   
+}
+
+.btn1 button:hover{
+background-color: black;
 }
