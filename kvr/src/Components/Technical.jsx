@@ -13,12 +13,12 @@ import database from '../Assets/Images/icons8-database-60.png'
 
 export default function Technical() {
     return (
-        <section className='container '>
-            <div className='technical-skills'>
+        <section className='container'>
+            <div className='technical-skills mt-5'>
                 <div className='container'>
 
                     <div class="tf-heading tf-heading-style-02 mb-5 text-center">
-                        <h2 class="tf-heading-title"  >Technical Skills</h2>
+                        <h2 class="tf-heading-title">Technical Skills</h2>
                     </div>
                     <div className='row text-center g-3'>
                         <div className='col-xl-3 col-lg-4'>
@@ -31,9 +31,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>CI/CD Tools</p>
+                                <p className='mb-3 heading6'>CI/CD Tools</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -47,9 +47,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Frame Work</p>
+                                <p className='mb-3 heading6'>Frame Work</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -63,9 +63,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Operating Systems</p>
+                                <p className='mb-3 heading6'>Operating Systems</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -79,9 +79,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Defect Management Tool</p>
+                                <p className='mb-3 heading6'>Defect Management Tool</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -95,9 +95,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Version Controlling Tool</p>
+                                <p className='mb-3 heading6'>Version Controlling Tool</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -111,9 +111,9 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Database Management</p>
+                                <p className='mb-3 heading6'>Database Management</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
@@ -127,25 +127,25 @@ export default function Technical() {
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Web Services Testing</p>
+                                <p className='mb-3 heading6'>Web Services Testing</p>
                                 <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                    <button className='btn btn-primary px-4 py-2 heading3'>Read More</button>
                                 </div>
                             </div>
                         </div>
                         <div className='col-xl-3 col-lg-4'>
                             <div className='card custom-card p-5 h-100 '>
                                 <div className='w-50 mx-auto wrap-icon p-3 rounded-3 mb-3'>
-                                    <img
+                                    <img 
                                         src={database}
                                         // style={{backgroundColor:"red"}}
                                         className="align-items-center  img-fluid"
                                         alt=""
                                     />
                                 </div>
-                                <p className='mb-3 heading3'>Automaton Testing </p>
-                                <div className='btn1'>
-                                    <button className='btn btn-primary px-4 py-2'>Read More</button>
+                                <p className='mb-3 heading6'>Automaton Testing </p>
+                                <div className='btn1 heading3'>
+                                    <button className='  btn btn-primary px-4 py-2 '>Read More</button>
                                 </div>
                             </div>
                         </div>

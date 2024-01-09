@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&family=Raleway:ital,wght@1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +15,20 @@
   letter-spacing: .2px;
   font-weight: bolder;
   line-height: 2;
-  font-size: 18px;
+  font-size: 12px;
   word-spacing: 8px;
 }
 
+
 .heading5 {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2px;
+  /* font-weight: 500; */
+  line-height: 2;
+  font-size: 15px;
+  word-spacing: 8px;
+}
+.heading6 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2px;
   font-weight: 500;
@@ -22,6 +37,26 @@
   word-spacing: 8px;
 }
 
+.heading7 {
+  font-family: 'Cinzel', serif;
+
+  letter-spacing: .2px;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 20px;
+  word-spacing: 8
+
+}
+.heading8{
+  font-family: 'Raleway', sans-serif;
+
+  letter-spacing: .2px;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 18px;
+  word-spacing: 8
+
+}
 /* .technical-skills{
   background-image: url('https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg');
   background-repeat: no-repeat;
@@ -115,4 +150,11 @@
 
 .btn1 button:hover{
 background-color: black;
+}
+.custom-card img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
