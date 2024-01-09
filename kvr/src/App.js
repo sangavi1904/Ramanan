@@ -1,12 +1,14 @@
 
 import './App.css';
-import './Diwa.css';
-import './Jagan.css'
+// import './Diwa.css';
 
 // import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Nav from './Components/Nav';
+import Technical from './Components/Technical';
 import Details from './Components/Details';
+import './Jagan.css'
+import Experience from './Components/Experience';
+
 
 function App() {
   return (
@@ -14,10 +16,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Home/>}/> */}
-        {/* <Route path="/" element={<Nav/>}/> */}
-        <Route path="/" element={<Details/>}/>
-
-
+        {/* <Route path="/" element={<Technical/>}/> */}
+        {/* <Route path="/" element={<Details/>}/> */}
+        <Route path="/" element={<Experience/>}/>
 
 
       </Routes>

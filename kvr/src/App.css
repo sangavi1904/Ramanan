@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading3 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 14px;
+
+  word-spacing: 8px;
+}
+
+.heading5 {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 17px;
+  word-spacing: 8px;
+}
+
+/* .technical-skills{
+  background-image: url('https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.tf-heading-style-02 .tf-heading-title:before,
+.tf-heading-style-02 .tf-heading-title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #fd562a;
+  ;
+  position: absolute;
+  top: 2.5px;
+}
+
+.tf-heading-style-02 .tf-heading-title {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tf .tf-heading-style-02 .tf-heading-title:before {
+  border-left-color: #fd562a;
+  ;
+  right: -30px;
+}
+
+.tf-heading-style-02 .tf-heading-title:before,
+.tf-heading-style-02 .tf-heading-title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #fd562a;
+  position: absolute;
+  top: 2.5px;
+  right: -30px;
+}
+
+.tf-heading-title {
+  color: black;
+  text-align: center;
+}
+
+.tficonbox {
+  text-align: left;
+  background-color: #FFFFFF;
+  padding: 0px 32px 40px 36px;
+  margin: 0px 25px 0px 0px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.custom-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card.custom-card {
+
+  border: none;
+
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wrap-icon{
+  background-color: #fd562a;
+  
+}
