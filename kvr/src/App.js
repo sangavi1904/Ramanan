@@ -1,10 +1,15 @@
 
 import './App.css';
+
+// import Career from './Components/Career';
+import Nav from './Components/Nav';
+
+
 import './Diwa.css';
 
 // import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Nav from './Components/Nav';
+// import Technical from './Components/Technical';
 
 function App() {
   return (
@@ -17,7 +22,9 @@ function App() {
 
 
         <Route path="/" element={<Nav/>}/>
-        
+
+        {/* <Route path="/" element={<Career/>}/> */}
+
       </Routes>
       </BrowserRouter>
      
