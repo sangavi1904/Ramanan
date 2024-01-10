@@ -13,24 +13,42 @@ import Scroll from './Scroll'
 import card1 from '../Assets/Images/cardimg.png'
 import card2 from '../Assets/Images/card2img.png'
 import card3 from '../Assets/Images/card3img.png'
-import Locationicon from '../Assets/Images/location-icon.png'
+import Locationicon from '../Assets/Images/icons8-location-48.png'
 import experience from '../Assets/Images/experience.png'
 import navlogo from '../Assets/Images/navimg.png'
 import Kalyanan from '../Assets/Images/Kalyanan.jpg'
 import Tech from '../Assets/Images/Tech.jpg'
 import profile1 from '../Assets/Images/profile1.png'
 import profile2 from '../Assets/Images/profile-2.png'
-
+import phoneicon from '../Assets/Images/icons8-phone-64.png'
+import mailicon from '../Assets/Images/icons8-email-64.png'
 
 function Home() {
+  let gotoTop = (secID) => {
+    const element = document.getElementById(secID); 
+    const navbarElement = document.querySelector('.navbar');
+
+    if (navbarElement) {
+      var navHeight = navbarElement.clientHeight;
+      // Use navHeight as needed
+    }
+    console.log(element)
+    if (element) {
+      const topPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: topPosition - navHeight, behavior: 'smooth' });
+
+    }
+
+  }
+  gotoTop();
   return (
-    <section className='overflow-x-hidden'> 
+    <div className='overflow-x-hidden find' >
 
       {/* Nav-Start */}
       <section className='nav-banner' id='home'>
-        <nav class="navbar navbar-expand-lg nav-banner" id='home-nav'  data-aos="fade-right" data-aos-duration="600">
+        <nav class="navbar navbar-expand-lg nav-banner" id='home-nav' data-aos="fade-right" data-aos-duration="600">
           <div class="container-fluid">
-            <Link class="navbar-brand" to="#">
+            <Link class="navbar-brand" onClick={() => gotoTop('home')}>
               <img src={navlogo} alt=" navlogo" />
             </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,31 +58,31 @@ function Home() {
               <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
 
                 <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href='#home'>Home</a>
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('home')}>Home</a>
                 </li>
 
                 <li class="nav-item heading6">
-                  <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#aboutus">About Us</a>
+                  <a class="nav-link active px-3 " aria-current="page" id='name-nav' onClick={() => gotoTop('aboutus')} >About Us</a>
                 </li>
                 <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#portfolio">Portfolio</a>
-                </li>
-
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technical">Technical</a>
-                </li>
-
-
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#work">Work</a>
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('portfolio')}>Portfolio</a>
                 </li>
 
                 <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#testimonial">Testimonial</a>
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('technical')} >Technical</a>
+                </li>
+
+
+                <li class="nav-item heading6">
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('work')}>Work</a>
+                </li>
+
+                <li class="nav-item heading6">
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('testimonial')}>Testimonial</a>
                 </li>
 
                 <li class="nav-item border-end heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#contact">Contact</a>
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('contact')} >Contact</a>
                 </li>
 
                 <a href='https://www.instagram.com/kalyana_venkata_ramanan/'>
@@ -88,7 +106,7 @@ function Home() {
         {/* Banner-Start */}
 
         <section className='container pt-5 mt-5' id='home'>
-          <div className='row py-5 mt-2'  data-aos="fade-left" data-aos-duration="700">
+          <div className='row py-5 mt-2' data-aos="fade-left" data-aos-duration="700">
 
             <div className='col-md-6 d-flex justify-content-center align-items-center'>
               <div className='text-md-start text-center'>
@@ -97,7 +115,10 @@ function Home() {
                 <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
                 <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
                 <div className='py-4 my-4'>
-                  <button className='banner-bts fw-bold fs-5 heading5'>Contact Me in Whatsapp</button>
+                  <button className='banner-bts fw-bold fs-5 heading5' onClick={() => window.open('https://wa.me/9092570489', '_blank')}>
+                    Contact Me on WhatsApp
+                  </button>
+
                 </div>
 
               </div>
@@ -118,7 +139,7 @@ function Home() {
 
       {/* Career-Start */}
       <section className='container' id='aboutus'>
-        <div className='text-center py-4 my-4'  data-aos="fade-up-right" data-aos-duration="600">
+        <div className='text-center py-4 my-4' data-aos="fade-up-right" data-aos-duration="600">
 
           <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>Career Objective</h3>
           <p className='pt-2 mt-1 heading4'> An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
@@ -321,7 +342,7 @@ function Home() {
           <div className='container'>
 
             <div class=" mb-5 text-center">
-              <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 'data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
+              <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
 
             </div>
             <div className='row'>
@@ -330,7 +351,7 @@ function Home() {
                 <Link to="/adorama" className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
-                      <img src={card1} className='img-fluid rounded-4' alt=""/>
+                      <img src={card1} className='img-fluid rounded-4' alt="" />
                     </div>
 
                     <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}>  Adorama</h3>
@@ -342,7 +363,7 @@ function Home() {
 
 
               <div className='col-md-4' data-aos="zoom-in" data-aos-duration="600">
-                <Link to='/Bny' className='text-decoration-none'>
+                <Link to='/bny' className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
                       <img src={card2} className='img-fluid rounded-4' alt="" />
@@ -356,7 +377,7 @@ function Home() {
               </div>
 
               <div className='col-md-4 ' data-aos="zoom-in" data-aos-duration="600">
-                <Link to='/Airpaz' className='text-decoration-none'>
+                <Link to='/airpaz' className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
                       <img src={card3} className='img-fluid rounded-4' alt="" />
@@ -385,7 +406,7 @@ function Home() {
           <div className="details-bg">
             <div className="container py-5">
               <h1 className="text-center text-md-center text-light ">
-                <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 'data-aos="fade-up" data-aos-duration="800"  style={{ color: "#fd562a" }}> Technical Details</h3>
+                <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}> Technical Details</h3>
               </h1>
               <div className="row justify-content-between py-5">
                 <div className="col-md-6 col-lg-4 mt-md-3 rounded-5 details-card-bg   " data-aos="fade-right" data-aos-duration="600">
@@ -434,7 +455,7 @@ function Home() {
 
       {/* work start */}
       <section className="container-fluid" id='work'>
-        <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 'data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}>Best Working Experience</h3>
+        <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}>Best Working Experience</h3>
 
         <div className="row  mt-5 pt-5 ">
           <div className="col-lg-6 col-12 align-items-center " data-aos="zoom-in" data-aos-duration="600">
@@ -509,11 +530,11 @@ function Home() {
 
 
       {/* testimonal start */}
-      <section className='nav-banner'>
+      <section className='nav-banner' id="testimonial">
         <div>
           <div
             class="elementor-widget-container"
-            id="testimonial"
+
             style={{ margin: "2rem" }}
           >
             <div
@@ -533,11 +554,11 @@ function Home() {
               </span>
             </div>
           </div>
-          <div className="container">
+          <div className="">
             <div className="carousel ">
-              <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner container">
+                  <div class="carousel-item active" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
 
@@ -651,7 +672,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
@@ -763,7 +784,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
@@ -916,7 +937,7 @@ function Home() {
         <section className='container'>
           <div className='py-4 my-4'>
             <div className='text-center'>
-              <h3 className='text-center mb-3 heading6 fs-2 fw-bold 'data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}> Get In Touch</h3>
+              <h3 className='text-center mb-3 heading6 fs-2 fw-bold ' data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}> Get In Touch</h3>
 
             </div>
             <div className='row pt-2' data-aos="zoom-in" data-aos-duration="600">
@@ -929,7 +950,7 @@ function Home() {
                     <h3 className='heading7 fw-bold'>Address</h3>
                     <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Kancheepuram.</p>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
-                      <button className='btn btn-primary px-4 py-2'>Location</button>
+                      <a className='btn btn-primary px-4 py-2' href='https://maps.app.goo.gl/1SwzHfrC71xg3Equ9'>Location</a>
                     </div>
                   </div>
                 </div>
@@ -937,13 +958,13 @@ function Home() {
               <div className='col-lg-3 pt-2'>
                 <div className='d-flex'>
                   <div className='me-3 pt-1'>
-                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
+                    <img src={phoneicon} alt="" className='img-fluid footer-icon' />
                   </div>
                   <div className='w-100'>
                     <h3 className='heading7 fw-bold'>Phone</h3>
                     <p className='heading6'>+91 90925 70489</p>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
-                      <button className='btn btn-primary px-4 py-2'>Contact Here</button>
+                      <a className='btn btn-primary px-4 py-2' href='tel:9092570489'>Contact here</a>
                     </div>
                   </div>
                 </div>
@@ -951,13 +972,13 @@ function Home() {
               <div className='col-lg-4 pt-2'>
                 <div className='d-flex'>
                   <div className='me-3 pt-1'>
-                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
+                    <img src={mailicon} alt="" className='img-fluid footer-icon' />
                   </div>
                   <div className='w-100'>
                     <h3 className='heading7 fw-bold'>E-Mail</h3>
                     <p className='heading6'>kalyanaramanan66@gmail.com</p>
                     <div className='btn1 pt-2 heading5 text-center text-lg-start'>
-                      <button className='btn btn-primary px-4 py-2 '>Go to</button>
+                      <a className='btn btn-primary px-4 py-2' href='mailto:kalyanaramanan66@gmail.com'>Go to</a>
                     </div>
                   </div>
                 </div>
@@ -978,7 +999,7 @@ function Home() {
       <Scroll />
 
 
-    </section>
+    </div>
   )
 }
 

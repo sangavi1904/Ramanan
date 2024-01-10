@@ -194,6 +194,9 @@
   visibility: visible;
   opacity: 1;
 }
+.navbar .nav-link{
+  cursor: pointer;
+}
 
 
 /* sara end css */
