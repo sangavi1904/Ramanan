@@ -3,7 +3,7 @@ import './App.css';
 import './Jagan.css'
 
 // import Career from './Components/Career';
-// import Nav from './Components/Nav';
+import Nav from './Components/Nav';
 
 
 import './Diwa.css';
@@ -21,9 +21,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Home/>}/> */}
-        <Route path="/" element={<Experience/>}/>
-
-        {/* <Route path="/" element={<Technical/>}/> */}
+        <Route path="/" element={<Technical/>}/>
       </Routes>
       </BrowserRouter>
      
