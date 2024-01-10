@@ -46,7 +46,7 @@ function Home() {
                 <li class="nav-item heading6">
                   <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technical">Technical</a>
                 </li>
-               
+
 
                 <li class="nav-item heading6">
                   <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#work">Work</a>
@@ -314,8 +314,8 @@ function Home() {
           <div className='container'>
 
             <div class=" mb-5 text-center">
-            <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
-              
+              <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
+
             </div>
             <div className='row'>
 
@@ -327,7 +327,7 @@ function Home() {
                     </div>
 
                     <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}>  Adorama</h3>
-                   
+
 
                   </div>
                 </Link>
@@ -342,7 +342,7 @@ function Home() {
                     </div>
 
                     <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}> BNY Melon</h3>
-                   
+
 
                   </div>
                 </Link>
@@ -356,7 +356,7 @@ function Home() {
                     </div>
 
                     <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}> Airpaz</h3>
-                   
+
 
                   </div>
                 </Link>
@@ -426,18 +426,73 @@ function Home() {
       {/* Technical details end */}
 
       {/* experience start */}
-      <section className="container-fluid">
-        <div className="row align-items-center mt-5 pt-5">
-          <div className="col-lg-6 col-12 ">
+      <section className="container-fluid" id='work'>
+        <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' style={{ color: "#fd562a" }}>Best Working Experience</h3>
+
+        <div className="row  mt-5 pt-5 ">
+          <div className="col-lg-6 col-12 align-items-center ">
             <img
               src="https://kvramanan.com/wp-content/uploads/2022/12/feature-photo-6.png"
-              className="img-fluid"
+              className="img-fluid mb-4"
               alt=""
             />
           </div>
-          <div className="col-lg-6 col-12 ">
+          <div className="col-lg-6 col-sm-12  rounded-5">
+
+            <div className="">
+              <div className="text-center text-md-center">
 
 
+              </div>
+              <div className="row mb-5 mb-md-3 mb-sm-3 justify-content-around">
+                <div className="col-10  rounded-4 exp-card">
+                  <div className='py-3 px-3'>
+                    <h3 className='heading7' style={{ color: "#FD562A" }}> Software Engineer</h3>
+                    <p className='heading6'>
+                      Mapps Info tech Private Limited, November 2018 - March 2023
+                      Chennai
+                    </p>  
+                    <div className="btn1 text-center text-lg-start">
+                      <button className="btn btn-primary px-4 py-2 heading3">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-5 mb-md-3 mb-sm-3 justify-content-around">
+                <div className="col-10 rounded-4 exp-card ">
+                  <div className='py-3 px-3'>
+                    <h3 className='heading7' style={{ color: "#FD562A" }}>Associate Software Engineer</h3>
+                    <p className='heading6'>
+                      Appright Software Solutions Pvt Ltd, February 2014 -
+                      November 2018 Bengaluru
+                    </p>
+                    <div className="btn1 text-center text-lg-start">
+                      <button className="btn btn-primary px-4 py-2 heading3 text-center">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row mb-5 mb-md-3 mb-sm-3 justify-content-around">
+                <div className="col-10  rounded-4 exp-card">
+                  <div className='py-3 px-3'>
+                    <h3 className='heading7 ' style={{ color: "#FD562A" }}> Software Test Engineer</h3>
+                    <p className='heading6'>
+                      Valley Info systems Pvt Ltd, May - 2014 to till date in
+                      Benagluru
+                    </p>
+                    <div className="btn1 text-center text-lg-start">
+                      <button className="btn btn-primary px-4 py-2 heading3 ">
+                        Read More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

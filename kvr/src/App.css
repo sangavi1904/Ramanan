@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&family=Raleway:ital,wght@1,300&display=swap');
 
+/* sara start */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@
   font-size: 12px;
   word-spacing: 8px;
 }
+
 .heading4 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: .2px;
@@ -36,6 +38,7 @@
   font-size: 15px;
   word-spacing: 8px;
 }
+
 .heading6 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2px;
@@ -54,9 +57,9 @@
   line-height: 2;
   font-size: 20px;
   word-spacing: 8
-
 }
-.heading8{
+
+.heading8 {
   font-family: 'Raleway', sans-serif;
 
   letter-spacing: .2px;
@@ -64,8 +67,8 @@
   line-height: 2;
   font-size: 18px;
   word-spacing: 8
-
 }
+
 .heading9 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2px;
@@ -74,12 +77,6 @@
   font-size: 17px;
   word-spacing: 8px;
 }
-
-/* .technical-skills{
-  background-image: url('https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .tf-heading-style-02 .tf-heading-title:before,
 .tf-heading-style-02 .tf-heading-title:after {
@@ -150,25 +147,15 @@
   justify-content: space-between;
 }
 
-/* .card.custom-card {
-
-  border: none;
-
-  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-} */
-
-/* .custom-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-} */
-
-.wrap-icon{
+.wrap-icon {
   background-color: #fd562a;
-  
+
 }
 
-.btn1 button:hover{
-background-color: black;
+.btn1 button:hover {
+  background-color: black;
 }
+
 .custom-card img {
   height: 40px;
   width: 40px;
@@ -176,6 +163,7 @@ background-color: black;
   display: block;
   margin: auto;
 }
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -205,34 +193,63 @@ background-color: black;
   visibility: visible;
   opacity: 1;
 }
-.details-bg{
+
+
+/* sara end css */
+
+
+/* jagan css start  */
+.details-bg {
   background-image: url("https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.details-heading{
+
+.details-heading {
   color: #fd562a;
 }
-.details-card-bg{
+
+.details-card-bg {
   background-color: #ffffff18;
 }
-.logo-img{
+
+.logo-img {
   width: 1000px;
 }
 
- .card.custom-card2 {
-  border: none;
-  /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
+.experience {
+  background-color: #fd582a10;
 }
 
-/* .custom-card2:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); 
-}  */
-/* Card.css */
+.exp-card {
+  background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
-.custom-card2{
+.exp-card:hover {
+  color: #fff;
+  background: rgb(253, 86, 42);
+  background: linear-gradient(90deg, rgba(253, 86, 42, 1) 0%, rgba(235, 139, 87, 1) 100%) !important;
+  transition: transform 0.3s ease-in;
+  transform: scale(0.9);
+}
+
+.exp-card:hover * {
+  color: #fff !important;
+}
+
+/* jagan css end */
+
+
+/* lav css start */
+
+.card.custom-card2 {
+  border: none;
+
+}
+
+.custom-card2 {
   transition: transform 0.3s, box-shadow 0.3s;
   margin-bottom: 20px;
 }
@@ -248,3 +265,45 @@ background-color: black;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgb(253 86 42)
 }
+
+/* lav css end */
+
+
+
+/* diwa.css */
+.nav-banner {
+  background-image: url(https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#name-nav {
+  color: white;
+}
+
+#name-nav:hover {
+  color: #fd562a;
+}
+
+.banner-head {
+  font-size: 50px;
+}
+
+.banner-bts {
+  border: none;
+  height: 55px;
+  width: 300px;
+  color: white;
+  background-color: #fd562a;
+  border-radius: 10px;
+}
+
+.banner-bts:hover {
+  background-color: #fd3903;
+}
+
+.head-icon {
+  height: 35px;
+}
+
+/* diwa css end */
