@@ -8,12 +8,9 @@ import Nav from './Components/Nav';
 
 import './Diwa.css';
 
-// import Home from './Components/Home';
+import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Technical from './Components/Technical';
-import About from './Components/About'
-// import Technical from './Components/Technical';
-import Home from './Components/Home'
 
 function App() {
   return (
@@ -30,8 +27,6 @@ function App() {
         {/* <Route path="/" element={<Nav/>}/> */}
 
         {/* <Route path="/" element={<Career/>}/> */}
-        <Route path="/" element={<Footer/>}/>
-
 
       </Routes>
       </BrowserRouter>
