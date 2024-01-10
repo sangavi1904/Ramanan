@@ -1,6 +1,5 @@
 
 import './App.css';
-import Footer from './Components/Footer';
 
 // import Career from './Components/Career';
 import Nav from './Components/Nav';
@@ -11,7 +10,6 @@ import './Diwa.css';
 import Home from './Components/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Technical from './Components/Technical';
-import Testimonal from './Components/Testimonal';
 
 function App() {
   return (
