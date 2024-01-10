@@ -80,7 +80,7 @@ function Home() {
 
             <div className='col-md-6 d-flex justify-content-center align-items-center'>
               <div className='text-md-start text-center'>
-              
+
                 <h5 className='text-light heading9 fw-bold fs-5'>Hello, I'm</h5>
                 <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
                 <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
@@ -269,8 +269,8 @@ function Home() {
       {/* Technical end */}
 
       {/* portfolio start */}
-      <section id='portfolio'>
-      <div className="container">
+      <section id='portfolio' className='m-5'>
+        <div className="container">
           <h3 className='heading7' style={{ color: "#FD562A" }}>  ABOUT ME</h3>
           <h2 className='fs-25 fw-bolder heading6 fs-2 fw-bold '> Full Stack Engineer </h2>
           <div className="row">
@@ -305,6 +305,79 @@ function Home() {
       {/* project start */}
 
       {/* project end */}
+
+      {/* Technical details start */}
+      <section>
+        <div className="overflow-hidden">
+          <div className="details-bg">
+            <div className="container py-5">
+              <h1 className="text-center text-md-center text-light ">
+                <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}> Technical Details</h3>
+              </h1>
+              <div className="row justify-content-between py-5">
+                <div className="col-md-6 col-lg-4 mt-md-3 rounded-5 details-card-bg   ">
+                  <div className="text-light p-3 mb-3  mb-md-0">
+                    <h4 className="details-heading heading7">Automation Testing Tools</h4>
+                    <p className='heading9'>Selenium Web driver, Rest Assured</p>
+                    <h4 className="details-heading heading7">Frame work</h4>
+                    <p className='heading9'>Cucumber, TestNG</p>
+                    <h4 className="details-heading heading7">Database</h4>
+                    <p className='heading9'>MySQL, Oracle SQL, Mongo DB</p>
+                    <h4 className="details-heading heading7">Defect Management tool</h4>
+                    <p className='heading9'>JIRA, HPALM</p>
+                  </div>
+                </div>
+                <div className=" col-md-6 col-lg-4 mt-md-3">
+                  <div className="text-light p-3  mb-3 mb-md-0">
+                    <img
+                      src="https://kvramanan.com/wp-content/uploads/elementor/thumbs/html-css-collage-concept-with-person-1-min-scaled-qbs1zz26ugyn2fal36cdw9lf9thhit4z5ajhmtd9ck.jpg"
+                      className="img-fluid rounded-4"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-md-6 details-card-bg rounded-5 mt-md-3">
+                  <div className="text-light p-3  mb-3 mb-md-0">
+                    <h4 className="details-heading heading7">Languages</h4>
+                    <p className='heading9'> JAVA, Python</p>
+                    <h4 className="details-heading heading7">Frame work</h4>
+                    <p className='heading9'>Git, Github and Bitbucket</p>
+                    <h4 className="details-heading heading7">Database</h4>
+                    <p className='heading9'>Jenkins, Docker</p>
+                    <h4 className="details-heading heading7">Operating Systems</h4>
+                    <p className='heading9'>Windows and Linux</p>
+                    <h4 className="details-heading heading7">Web Services Testing Tools</h4>
+                    <p className='heading9'>Postman, Postman, Rest Assured</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Technical details end */}
+
+      {/* experience start */}
+      <section className="container-fluid">
+        <div className="row align-items-center mt-5 pt-5">
+          <div className="col-lg-6 col-12 ">
+            <img
+              src="https://kvramanan.com/wp-content/uploads/2022/12/feature-photo-6.png"
+              className="img-fluid"
+              alt=""
+            />
+          </div>
+          <div className="col-lg-6 col-12 ">
+        
+                
+          </div>
+        </div>
+      </section>
+
+      {/* experience end */}
+
       <Scroll />
 
 
