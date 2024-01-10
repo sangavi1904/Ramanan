@@ -1,5 +1,5 @@
 
-
+import './App.css';
 import './Jagan.css'
 
 // import Career from './Components/Career';
@@ -11,7 +11,7 @@ import Bny from './Bny'
 import Airpaz from './Airpaz';
 
 
-import './App.css';
+
 
 import Home from './Components/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
