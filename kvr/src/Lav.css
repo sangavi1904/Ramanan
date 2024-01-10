@@ -3,26 +3,21 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  
-  
-  .custom-card {
-    transition: 0.3s ease;
-    margin-bottom: 20px;
-  }
-   .card.custom-card {
+ 
+   .card.custom-card2 {
     border: none;
     /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
   }
   
-  .custom-card:hover {
+  .custom-card2:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); 
   } 
   /* Card.css */
 
-.custom-card {
+.custom-card2{
     transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
   }
   
   

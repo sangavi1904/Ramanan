@@ -15,34 +15,33 @@ export default function Airpaz() {
           <p ><span className='fw-bold'>Project</span>  : Airpaz</p>
         </div>
         <div className='col-md-4 pt-4'>
-          <p> <span className='fw-bold'>Client</span>  : New York</p>
+          <p> <span className='fw-bold'>Client</span>  : Travel Enthusiasts Worldwide</p>
         </div>
         <div className='col-md-4 pt-4'>
-          <p><span className='fw-bold'>Domain</span>  :  Banking Domain</p>
+          <p><span className='fw-bold'>Domain</span>  :  Travel and Hospitality</p>
         </div>
       </div>
       <div className=' pt-3'>
         <h4 className='fw-bold'>Project Description:</h4>
-        <p className='pt-2'>This project was executed in Agile (iterative) mode. This project added Deposit Account functions on Customer web site prosperity banktx.com and Bank Officer Portal. The functions are Deposit Account Screening and Opening, Activating Debit Card, Changing PIN on an ATM/Debit Card, Reporting a lost/stolen ATM/Debit Card, Reporting a dispute, changing the joint Account Holders, Ordering Checks, etc. This project established new online and batch interfaces to Core Banking System, Debit Card Processor, Clarke American and other Banking vendors. This project is expected to reduce number of customer calls. This project implemented a rules engine for screening the new account applications for Fraud and Eligibility.</p>
+        <p className='pt-2'>The 'Airpaz' project, executed with an Agile methodology, focuses on enhancing the user experience for travelers on the airpaz.com platform. This comprehensive travel management software offers a suite of functions, streamlining the booking and management processes for flights, hotels, and various travel-related services.</p>
       </div >
 
       <div className=' pt-3'>
         <h4 className='fw-bold'>Role / Job Responsibilities:</h4>
         <ul className='card-li'>
-          <li>Involved in Regression testing of each build during the various phases of the application using QTP.</li>
-          <li>Automation of test scripts was done using QTP for test re-usability of different online transaction modules.</li>
-          <li>Experience in the creation of library functions, Checkpoints, Data Validation Descriptive Programming using QTP 1 1.0.</li>
-          <li>Experience in Data Driven and Keyword Driven testing.</li>
-          <li>A proven track record of successfully implementing projects using waterfall.</li>
-          <li>Responsible for updating and maintaining Quality Center for all the defects found during the functional and regression testing and follow up the bug life cycle.</li>
-          <li>Used high-level dynamic response assertions, such as JSON count, JSON path match, and Reg Exp for all the test cases in order to assert and test the REST Services.</li>
-          <li>Used SOAPUI to test SOA based architecture application to test SOAP services and RESTAPI with JSON/XML.</li>
-          <li>Involved in creating Manual test case for functional stories and automating them for smoke and Regression Testing in each sprint cycle.</li>
-          <li>Developed spatial data overlays and comparisons tests.</li>
-          <li>Conducted Regression Testing, Smoke Testing, Cross-browser testing through automated testing tools like QA Wizard, Selenium, and cucumber along with Manual testing.</li>
+         
+        
+  <li>Rigorous testing of each software build to ensure the stability and reliability of the Airpaz platform.</li>
+  <li>Automation: Using tools like Selenium and Cucumber for automating test scripts, ensuring reusability and efficiency across different modules of the application.</li>
+  <li>Quality Assurance: Updating and maintaining a comprehensive quality assurance system to track and address defects found during functional and regression testing, following the bug life cycle.</li>
+  <li>API Testing: Utilizing SOAPUI for testing the application's SOA-based architecture, ensuring the seamless functioning of SOAP services and RESTAPI with JSON/XML.</li>
+  <li>Manual Test Case Development: Creating manual test cases for functional stories and automating them for both smoke and regression testing in each sprint cycle.</li>
+  <li>Cross-Browser Testing: Conducting thorough testing across various browsers using automated testing tools such as QA Wizard and Selenium, complemented by manual testing protocols.</li>
+</ul>
 
-        </ul>
+        
       </div>
     </section>
   )
 }
+

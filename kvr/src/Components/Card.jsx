@@ -19,8 +19,8 @@ export default function Card() {
                       
                         <div className='col-md-4'>
                         <Link to="/Adorama" className='text-decoration-none'>
-                            <div className='card custom-card px-2 py-2 rounded-4'>
-                                <div className='ww'>
+                            <div className='card custom-card2 px-2 py-2 rounded-4'>
+                                <div className=''>
                                     <img src={card1} className='img-fluid rounded-4' alt="" />
                                 </div>
 
@@ -34,7 +34,7 @@ export default function Card() {
 
                         <div className='col-md-4'>
                             <Link to='/Bny' className='text-decoration-none'>
-                            <div className='card custom-card px-2 py-2 rounded-4'>
+                            <div className='card custom-card2 px-2 py-2 rounded-4'>
                                 <div className=''>
                                     <img src={card2} className='img-fluid rounded-4' alt="" />
                                 </div>
@@ -48,7 +48,7 @@ export default function Card() {
 
                         <div className='col-md-4 '>
                             <Link to='/Airpaz' className='text-decoration-none'>
-                            <div className='card custom-card px-2 py-2 rounded-4'>
+                            <div className='card custom-card2 px-2 py-2 rounded-4'>
                                 <div className=''>
                                     <img src={card3} className='img-fluid rounded-4' alt="" />
                                 </div>
