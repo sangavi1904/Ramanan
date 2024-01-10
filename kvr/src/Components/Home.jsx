@@ -79,8 +79,8 @@ function Home() {
           <div className='row py-5 mt-2'>
 
             <div className='col-md-6 d-flex justify-content-center align-items-center'>
-              <div>
-                {/* className='col-6 col-12 text-center col-md-start' */}
+              <div className='text-md-start text-center'>
+              
                 <h5 className='text-light heading9 fw-bold fs-5'>Hello, I'm</h5>
                 <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
                 <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
@@ -303,7 +303,7 @@ function Home() {
       {/* portfolio end */}
 
       {/* project start */}
-      
+
       {/* project end */}
       <Scroll />
 
