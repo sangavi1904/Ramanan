@@ -5,11 +5,18 @@
     background-repeat: no-repeat;
 }
 .details-heading{
-    color: #fd562a;
+    color: #fd562a ;
 }
 .details-card-bg{
     background-color: #ffffff18;
 }
 .logo-img{
     width: 1000px;
+}
+.experience{
+    background-color: #fd582a10 ;
+}
+.exp-card:hover{
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
