@@ -13,19 +13,25 @@ import Scroll from './Scroll'
 import card1 from '../Assets/Images/cardimg.png'
 import card2 from '../Assets/Images/card2img.png'
 import card3 from '../Assets/Images/card3img.png'
-import Locationicon from '../Assets/Images/location-icon.png' 
+import Locationicon from '../Assets/Images/location-icon.png'
+import experience from '../Assets/Images/experience.png'
+import navlogo from '../Assets/Images/navimg.png'
+import Kalyanan from '../Assets/Images/Kalyanan.jpg'
+import Tech from '../Assets/Images/Tech.jpg'
+import profile1 from '../Assets/Images/profile1.png'
+import profile2 from '../Assets/Images/profile-2.png'
 
 
 function Home() {
   return (
-    <section>
+    <section className='overflow-x-hidden'> 
 
       {/* Nav-Start */}
-      <section className='nav-banner ' id='home'>
-        <nav class="navbar navbar-expand-lg nav-banner" id='home'>
+      <section className='nav-banner' id='home'>
+        <nav class="navbar navbar-expand-lg nav-banner" id='home-nav'  data-aos="fade-right" data-aos-duration="600">
           <div class="container-fluid">
             <Link class="navbar-brand" to="#">
-              <img src="https://kvramanan.com/wp-content/uploads/2023/07/Image-Cut-80x80-min.png" alt=" navlogo" />
+              <img src={navlogo} alt=" navlogo" />
             </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -81,8 +87,8 @@ function Home() {
 
         {/* Banner-Start */}
 
-        <section className='container' id='home'>
-          <div className='row py-5 mt-2'>
+        <section className='container pt-5 mt-5' id='home'>
+          <div className='row py-5 mt-2'  data-aos="fade-left" data-aos-duration="700">
 
             <div className='col-md-6 d-flex justify-content-center align-items-center'>
               <div className='text-md-start text-center'>
@@ -112,7 +118,7 @@ function Home() {
 
       {/* Career-Start */}
       <section className='container' id='aboutus'>
-        <div className='text-center py-4 my-4'>
+        <div className='text-center py-4 my-4'  data-aos="fade-up-right" data-aos-duration="600">
 
           <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>Career Objective</h3>
           <p className='pt-2 mt-1 heading4'> An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
@@ -128,7 +134,7 @@ function Home() {
 
       {/* Technical Start */}
       <section>
-        <div className='nav-banner '>
+        <div className='nav-banner' data-aos="fade-left" data-aos-duration="700">
           <div className='technical-skills mt-2'>
             <div className='container my-5 py-5'>
 
@@ -276,16 +282,16 @@ function Home() {
 
       {/* portfolio start */}
       <section id='portfolio' className='m-5'>
-        <div className="container">
+        <div className="container"  >
           <h3 className='heading7' style={{ color: "#FD562A" }}>  ABOUT ME</h3>
           <h2 className='fs-25 fw-bolder heading6 fs-2 fw-bold '> Full Stack Engineer </h2>
           <div className="row">
 
-            <div className="col-md-5">
-              <img src="https://kvramanan.com/wp-content/uploads/2023/06/Photo_Kalyanan-Venkata-Ramanan.jpg" className='img-fluid' alt="" />
+            <div className="col-md-5" data-aos="zoom-in" data-aos-duration="800" >
+              <img src={Kalyanan} className='img-fluid' alt="" />
 
             </div>
-            <div className="col-md-7 heading5">
+            <div className="col-md-7 heading5" data-aos="fade-left" data-aos-duration="800">
               <ul>
                 <li>Over 9+ years of IT experience which includes 3+ years of Extensive experience as  a React JS Developer and 4+ years of Experience as a Django Developer and 2+ years of Experience as software Tester.</li>
                 <li>Expertise in React JS framework to develop the SPA. Experienced in React JS and working with React Flux architecture.</li>
@@ -315,16 +321,16 @@ function Home() {
           <div className='container'>
 
             <div class=" mb-5 text-center">
-              <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
+              <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 'data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
 
             </div>
             <div className='row'>
 
-              <div className='col-md-4'>
-                <Link to="/Adorama" className='text-decoration-none'>
+              <div className='col-md-4' data-aos="zoom-in" data-aos-duration="600">
+                <Link to="/adorama" className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
-                      <img src={card1} className='img-fluid rounded-4' alt="" />
+                      <img src={card1} className='img-fluid rounded-4' alt=""/>
                     </div>
 
                     <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}>  Adorama</h3>
@@ -335,7 +341,7 @@ function Home() {
               </div>
 
 
-              <div className='col-md-4'>
+              <div className='col-md-4' data-aos="zoom-in" data-aos-duration="600">
                 <Link to='/Bny' className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
@@ -349,7 +355,7 @@ function Home() {
                 </Link>
               </div>
 
-              <div className='col-md-4 '>
+              <div className='col-md-4 ' data-aos="zoom-in" data-aos-duration="600">
                 <Link to='/Airpaz' className='text-decoration-none'>
                   <div className='card custom-card2 px-2 py-2 rounded-4'>
                     <div className=''>
@@ -379,11 +385,11 @@ function Home() {
           <div className="details-bg">
             <div className="container py-5">
               <h1 className="text-center text-md-center text-light ">
-                <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}> Technical Details</h3>
+                <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 'data-aos="fade-up" data-aos-duration="800"  style={{ color: "#fd562a" }}> Technical Details</h3>
               </h1>
               <div className="row justify-content-between py-5">
-                <div className="col-md-6 col-lg-4 mt-md-3 rounded-5 details-card-bg   ">
-                  <div className="text-light p-3 mb-3  mb-md-0">
+                <div className="col-md-6 col-lg-4 mt-md-3 rounded-5 details-card-bg   " data-aos="fade-right" data-aos-duration="600">
+                  <div className="text-light p-3 mb-3  mb-md-0" >
                     <h4 className="details-heading heading7">Automation Testing Tools</h4>
                     <p className='heading9'>Selenium Web driver, Rest Assured</p>
                     <h4 className="details-heading heading7">Frame work</h4>
@@ -395,15 +401,15 @@ function Home() {
                   </div>
                 </div>
                 <div className=" col-md-6 col-lg-4 mt-md-3">
-                  <div className="text-light p-3  mb-3 mb-md-0">
+                  <div className="text-light p-3  mb-3 mb-md-0" data-aos="zoom-in" data-aos-duration="600">
                     <img
-                      src="https://kvramanan.com/wp-content/uploads/elementor/thumbs/html-css-collage-concept-with-person-1-min-scaled-qbs1zz26ugyn2fal36cdw9lf9thhit4z5ajhmtd9ck.jpg"
+                      src={Tech}
                       className="img-fluid rounded-4"
                       alt=""
                     />
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6 details-card-bg rounded-5 mt-md-3">
+                <div className="col-lg-4 col-md-6 details-card-bg rounded-5 mt-md-3" data-aos="fade-left" data-aos-duration="600">
                   <div className="text-light p-3  mb-3 mb-md-0">
                     <h4 className="details-heading heading7">Languages</h4>
                     <p className='heading9'> JAVA, Python</p>
@@ -428,17 +434,17 @@ function Home() {
 
       {/* work start */}
       <section className="container-fluid" id='work'>
-        <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' style={{ color: "#fd562a" }}>Best Working Experience</h3>
+        <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 'data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}>Best Working Experience</h3>
 
         <div className="row  mt-5 pt-5 ">
-          <div className="col-lg-6 col-12 align-items-center ">
+          <div className="col-lg-6 col-12 align-items-center " data-aos="zoom-in" data-aos-duration="600">
             <img
-              src="https://kvramanan.com/wp-content/uploads/2022/12/feature-photo-6.png"
+              src={experience}
               className="img-fluid mb-4"
               alt=""
             />
           </div>
-          <div className="col-lg-6 col-sm-12  rounded-5">
+          <div className="col-lg-6 col-sm-12  rounded-5" data-aos="fade-right" data-aos-duration="600">
 
             <div className="">
               <div className="text-center text-md-center">
@@ -452,7 +458,7 @@ function Home() {
                     <p className='heading6'>
                       Mapps Info tech Private Limited, November 2018 - March 2023
                       Chennai
-                    </p>  
+                    </p>
                     <div className="btn1 text-center text-lg-start">
                       <button className="btn btn-primary px-4 py-2 heading3">
                         Read More
@@ -504,468 +510,468 @@ function Home() {
 
       {/* testimonal start */}
       <section className='nav-banner'>
-            <div>
-                <div
-                    class="elementor-widget-container"
-                    id="testimonial"
-                    style={{ margin: "2rem" }}
-                >
-                    <div
-                        class="section-title text-center aos-init aos-animate"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        data-aos-delay="100"
-                        data-aos-once="true"
-                    >
-                               <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' style={{ color: "#fd562a" }}>Testimonial</h3>
+        <div>
+          <div
+            class="elementor-widget-container"
+            id="testimonial"
+            style={{ margin: "2rem" }}
+          >
+            <div
+              class="section-title text-center aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="100"
+              data-aos-once="true"
+            >
+              <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>Testimonial</h3>
 
-                        <span
-                            class="subtitle sub-title text-light heading5"
-                            style={{ fontFamily: '"Montserrat", sans-serif' }}
-                        >
-                            What happy clients say about us ?
-                        </span>
-                    </div>
-                </div>
-                <div className="container">
-                    <div className="carousel ">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div className="row p-3">
-                                        <div className="col-md-4 mb-5">
-                                           
-                                            <div className='text-center pt-3 mt-3'>
-                                                <div>
-                                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png" alt="" className='w-50'/>
-                                                </div>
-                                                <div className='text-light py-3 my-3'>
-                                                    <h4 className='heading9 fw-bold fs-5'>Alfred James</h4>
-                                                    <p className='heading5'>Web Developer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="user">
-                                                <div class="card-description ">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title heading9">Alfred James</h3>
-                                                            <span class="date"> </span>
-                                                        </div>
-
-                                                        <div class="rating">
-                                                            <ul className="p-0 mx-auto my-0">
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="my-3 border"></div>
-                                                    <div class="seperator"></div>
-                                                    <p class="description heading5">Highly recommended. Respectful, polite, great communication,
-                                                        understood our needs, and delivered more than what was expected.
-                                                        There really is no need to look further than Kalyan and his team.
-                                                        They added a lot more value with their insights and suggestions while
-                                                        making sure we were happy with the key decisions.{" "}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div className="row p-3">
-                                        <div className="col-md-4 mb-5">
-                                        <div className='text-center pt-3 mt-3'>
-                                                <div>
-                                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png" alt="" className='w-50'/>
-                                                </div>
-                                                <div className='text-light py-3 my-3'>
-                                                    <h4 className='heading9 fw-bold fs-5'>Adam Jones</h4>
-                                                    <p className='heading5'>Web Developer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="user">
-                                                <div class="card-description ">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title heading9">Adam Jones</h3>
-                                                            <span class="date"> </span>
-                                                        </div>
-
-                                                        <div class="rating">
-                                                            <ul className="p-0 mx-auto my-0">
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="my-3 border"></div>
-                                                    <div class="seperator"></div>
-                                                    <p class="description heading5">Kalyan’s understanding and execution are outstanding. He delivered 
-                                                        exceptional work on time and is always willing to go the customer satisfaction. His attention to detail is impressive, 
-                                                        and he consistently exceeds expectations. I highly recommend Kalyan to 
-                                                        anyone in need of a reliable, professional, and dedicated professional.{" "}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div className="row p-3">
-                                        <div className="col-md-4 mb-5">
-                                        <div className='text-center pt-3 mt-3'>
-                                                <div>
-                                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png" alt="" className='w-50'/>
-                                                </div>
-                                                <div className='text-light py-3 my-3'>
-                                                    <h4 className='heading9 fw-bold fs-5'>Megan</h4>
-                                                    <p className='heading5'>Web Developer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="user">
-                                                <div class="card-description ">
-                                                    <div class="title-area">
-                                                        <div class="title-info">
-                                                            <h3 class="title heading9"> Megan</h3>
-                                                            <span class="date"> </span>
-                                                        </div>
-
-                                                        <div class="rating">
-                                                            <ul className="p-0 mx-auto my-0">
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-
-                                                                <li class="has-rating list-inline-item">
-                                                                    <i class="star-icon">
-                                                                        <svg
-                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                            width="16"
-                                                                            height="16"
-                                                                            fill="currentColor"
-                                                                            class="bi bi-star-fill"
-                                                                            viewBox="0 0 16 16"
-                                                                        >
-                                                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
-                                                                        </svg>
-                                                                    </i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div className="my-3 border"></div>
-                                                    <div class="seperator"></div>
-                                                    <p  class="description heading5">Kalyan is exceptional! His attention to detail, problem-solving 
-                                                        skills, and dedication to the project have been invaluable. The 
-                                                        high-quality code he and his team deliver is not only functional 
-                                                        but also efficient and easy to maintain. Thank you for your hard 
-                                                        work and expertise, Kalyan. Your efforts are greatly appreciated!{" "}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button
-                                class="carousel-control-prev"
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="prev"
-                            >
-                                <span
-                                    class="carousel-control-prev-icon"
-                                    aria-hidden="true"
-                                ></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button
-                                class="carousel-control-next"
-                                type="button"
-                                data-bs-target="#carouselExampleIndicators"
-                                data-bs-slide="next"
-                            >
-                                <span
-                                    class="carousel-control-next-icon"
-                                    aria-hidden="true"
-                                ></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                       
-                    </div>
-                </div>
+              <span
+                class="subtitle sub-title text-light heading5"
+                style={{ fontFamily: '"Montserrat", sans-serif' }} data-aos="fade-right" data-aos-duration="800"
+              >
+                What happy clients say about us ?
+              </span>
             </div>
+          </div>
+          <div className="container">
+            <div className="carousel ">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div className="row p-3">
+                      <div className="col-md-4 mb-5">
 
-        </section>
+                        <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                          <div>
+                            <img src={profile1} alt="" className='w-50' />
+                          </div>
+                          <div className='text-light py-3 my-3' >
+                            <h4 className='heading9 fw-bold fs-5'>Alfred James</h4>
+                            <p className='heading5'>Web Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                        <div className="user">
+                          <div class="card-description " >
+                            <div class="title-area">
+                              <div class="title-info">
+                                <h3 class="title heading9">Alfred James</h3>
+                                <span class="date"> </span>
+                              </div>
+
+                              <div class="rating">
+                                <ul className="p-0 mx-auto my-0">
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="my-3 border"></div>
+                            <div class="seperator"></div>
+                            <p class="description heading5">Highly recommended. Respectful, polite, great communication,
+                              understood our needs, and delivered more than what was expected.
+                              There really is no need to look further than Kalyan and his team.
+                              They added a lot more value with their insights and suggestions while
+                              making sure we were happy with the key decisions.{" "}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div className="row p-3">
+                      <div className="col-md-4 mb-5">
+                        <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                          <div>
+                            <img src={profile2} alt="" className='w-50' />
+                          </div>
+                          <div className='text-light py-3 my-3'>
+                            <h4 className='heading9 fw-bold fs-5'>Adam Jones</h4>
+                            <p className='heading5'>Web Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                        <div className="user">
+                          <div class="card-description ">
+                            <div class="title-area">
+                              <div class="title-info">
+                                <h3 class="title heading9">Adam Jones</h3>
+                                <span class="date"> </span>
+                              </div>
+
+                              <div class="rating">
+                                <ul className="p-0 mx-auto my-0">
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="my-3 border"></div>
+                            <div class="seperator"></div>
+                            <p class="description heading5">Kalyan’s understanding and execution are outstanding. He delivered
+                              exceptional work on time and is always willing to go the customer satisfaction. His attention to detail is impressive,
+                              and he consistently exceeds expectations. I highly recommend Kalyan to
+                              anyone in need of a reliable, professional, and dedicated professional.{" "}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div className="row p-3">
+                      <div className="col-md-4 mb-5">
+                        <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
+                          <div>
+                            <img src={profile1} alt="" className='w-50' />
+                          </div>
+                          <div className='text-light py-3 my-3'>
+                            <h4 className='heading9 fw-bold fs-5'>Mega</h4>
+                            <p className='heading5'>Web Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
+                        <div className="user">
+                          <div class="card-description ">
+                            <div class="title-area">
+                              <div class="title-info">
+                                <h3 class="title heading9"> Mega</h3>
+                                <span class="date"> </span>
+                              </div>
+
+                              <div class="rating">
+                                <ul className="p-0 mx-auto my-0">
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+
+                                  <li class="has-rating list-inline-item">
+                                    <i class="star-icon">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-star-fill"
+                                        viewBox="0 0 16 16"
+                                      >
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                      </svg>
+                                    </i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div className="my-3 border"></div>
+                            <div class="seperator"></div>
+                            <p class="description heading5">Kalyan is exceptional! His attention to detail, problem-solving
+                              skills, and dedication to the project have been invaluable. The
+                              high-quality code he and his team deliver is not only functional
+                              but also efficient and easy to maintain. Thank you for your hard
+                              work and expertise, Kalyan. Your efforts are greatly appreciated!{" "}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
       {/* testimonal end */}
 
       {/* footer Start */}
       <section id='contact'>
-            <section className='container'>
-                <div className='py-4 my-4'>
-                    <div className='text-center'>
-                    <h3 className='text-center mb-3 heading6 fs-2 fw-bold ' style={{ color: "#fd562a" }}> Get In Touch</h3>
+        <section className='container'>
+          <div className='py-4 my-4'>
+            <div className='text-center'>
+              <h3 className='text-center mb-3 heading6 fs-2 fw-bold 'data-aos="fade-up" data-aos-duration="600" style={{ color: "#fd562a" }}> Get In Touch</h3>
 
-                    </div>
-                    <div className='row pt-2'>
-                        <div className='col-lg-5 pt-2'>
-                            <div className='d-flex '>
-                                <div className='me-3 pt-1'>
-                                    <img src={Locationicon} alt="" className='footer-icon' />
-                                </div>
-                                <div>
-                                    <h3 className='heading7 fw-bold'>Address</h3>
-                                    <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Kancheepuram.</p>
-                                    <div className='btn1 pt-1 heading5'>
-                                        <button className='btn btn-primary px-4 py-2'>Location</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-3 pt-2'>
-                            <div className='d-flex'>
-                                <div className='me-3 pt-1'>
-                                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
-                                </div>
-                                <div>
-                                    <h3 className='heading7 fw-bold'>Phone</h3>
-                                    <p className='heading6'>+91 90925 70489</p>
-                                    <div className='btn1 pt-2 heading5'>
-                                        <button className='btn btn-primary px-4 py-2'>Contact Here</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-4 pt-2'>
-                            <div className='d-flex'>
-                                <div className='me-3 pt-1'>
-                                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
-                                </div>
-                                <div>
-                                    <h3 className='heading7 fw-bold'>E-Mail</h3>
-                                    <p className='heading6'>kalyanaramanan66@gmail.com</p>
-                                    <div className='btn1 pt-2 heading5'>
-                                        <button className='btn btn-primary px-4 py-2 '>Go to</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <div className='py-3 my-3' style={{ backgroundColor: '#060525' }}>
-                <div className=' text-center text-light pt-3 heading6' >
-                    <p > © 2023 @Kalyana Venkata Ramanan All Rights Reserved.</p>
-                </div>
             </div>
+            <div className='row pt-2' data-aos="zoom-in" data-aos-duration="600">
+              <div className='col-lg-5 pt-2'>
+                <div className='d-flex '>
+                  <div className='me-3 pt-1'>
+                    <img src={Locationicon} alt="" className='footer-icon' />
+                  </div>
+                  <div>
+                    <h3 className='heading7 fw-bold'>Address</h3>
+                    <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Kancheepuram.</p>
+                    <div className='btn1 pt-1 heading5 text-center text-lg-start'>
+                      <button className='btn btn-primary px-4 py-2'>Location</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-3 pt-2'>
+                <div className='d-flex'>
+                  <div className='me-3 pt-1'>
+                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
+                  </div>
+                  <div className='w-100'>
+                    <h3 className='heading7 fw-bold'>Phone</h3>
+                    <p className='heading6'>+91 90925 70489</p>
+                    <div className='btn1 pt-1 heading5 text-center text-lg-start'>
+                      <button className='btn btn-primary px-4 py-2'>Contact Here</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-4 pt-2'>
+                <div className='d-flex'>
+                  <div className='me-3 pt-1'>
+                    <img src={Locationicon} alt="" className='img-fluid footer-icon' />
+                  </div>
+                  <div className='w-100'>
+                    <h3 className='heading7 fw-bold'>E-Mail</h3>
+                    <p className='heading6'>kalyanaramanan66@gmail.com</p>
+                    <div className='btn1 pt-2 heading5 text-center text-lg-start'>
+                      <button className='btn btn-primary px-4 py-2 '>Go to</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
+        <div className='py-3 mt-3' style={{ backgroundColor: '#060525' }} >
+          <div className=' text-center text-light pt-3 heading6' >
+            <p > © 2023 @Kalyana Venkata Ramanan All Rights Reserved.</p>
+          </div>
+        </div>
+      </section>
 
       {/* footer end */}
 
