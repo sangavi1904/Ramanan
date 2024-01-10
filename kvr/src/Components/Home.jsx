@@ -10,6 +10,10 @@ import jira from '../Assets/Images/icons8-jira-60.png'
 import git from '../Assets/Images/icons8-git-64.png'
 import database from '../Assets/Images/icons8-database-60.png'
 import Scroll from './Scroll'
+import card1 from '../Assets/Images/cardimg.png'
+import card2 from '../Assets/Images/card2img.png'
+import card3 from '../Assets/Images/card3img.png'
+
 
 function Home() {
   return (
@@ -35,13 +39,14 @@ function Home() {
                 <li class="nav-item heading6">
                   <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#aboutus">About Us</a>
                 </li>
+                <li class="nav-item heading6">
+                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#portfolio">Portfolio</a>
+                </li>
 
                 <li class="nav-item heading6">
                   <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technical">Technical</a>
                 </li>
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#portfolio">Portfolio</a>
-                </li>
+               
 
                 <li class="nav-item heading6">
                   <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#work">Work</a>
@@ -121,7 +126,7 @@ function Home() {
       {/* Career-End */}
 
       {/* Technical Start */}
-      <section id='technical'>
+      <section>
         <div className='nav-banner '>
           <div className='technical-skills mt-2'>
             <div className='container my-5 py-5'>
@@ -304,10 +309,71 @@ function Home() {
 
       {/* project start */}
 
+      <section className='pt-5 m-5'>
+        <div className='technical-skills'>
+          <div className='container'>
+
+            <div class=" mb-5 text-center">
+            <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
+              
+            </div>
+            <div className='row'>
+
+              <div className='col-md-4'>
+                <Link to="/Adorama" className='text-decoration-none'>
+                  <div className='card custom-card2 px-2 py-2 rounded-4'>
+                    <div className=''>
+                      <img src={card1} className='img-fluid rounded-4' alt="" />
+                    </div>
+
+                    <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}>  Adorama</h3>
+                   
+
+                  </div>
+                </Link>
+              </div>
+
+
+              <div className='col-md-4'>
+                <Link to='/Bny' className='text-decoration-none'>
+                  <div className='card custom-card2 px-2 py-2 rounded-4'>
+                    <div className=''>
+                      <img src={card2} className='img-fluid rounded-4' alt="" />
+                    </div>
+
+                    <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}> BNY Melon</h3>
+                   
+
+                  </div>
+                </Link>
+              </div>
+
+              <div className='col-md-4 '>
+                <Link to='/Airpaz' className='text-decoration-none'>
+                  <div className='card custom-card2 px-2 py-2 rounded-4'>
+                    <div className=''>
+                      <img src={card3} className='img-fluid rounded-4' alt="" />
+                    </div>
+
+                    <h3 className='heading7 pt-4 pb-3 fs-4' style={{ color: "#222" }}> Airpaz</h3>
+                   
+
+                  </div>
+                </Link>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
       {/* project end */}
 
       {/* Technical details start */}
-      <section>
+      <section id='technical'>
         <div className="overflow-hidden">
           <div className="details-bg">
             <div className="container py-5">
@@ -370,13 +436,18 @@ function Home() {
             />
           </div>
           <div className="col-lg-6 col-12 ">
-        
-                
+
+
           </div>
         </div>
       </section>
 
       {/* experience end */}
+
+
+
+      {/* work start */}
+      {/* work end */}
 
       <Scroll />
 
