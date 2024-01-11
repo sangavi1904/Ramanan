@@ -128,7 +128,7 @@ function Home() {
 
             <div className='col-md-6 text-center'>
               <div className='pb-4 mb-4'>
-              <img src={kvram} className='img-fluid' alt="" />
+              <img src={kvram} className='img-fluid rounded-3' alt="" />
 
 
               </div>
