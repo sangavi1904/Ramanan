@@ -11,6 +11,9 @@
   box-sizing: border-box;
   
 }
+.kvrlogo{
+  border-radius: 50%;
+}
 
 .heading3 {
   font-family: 'Roboto', sans-serif;
@@ -204,7 +207,7 @@
 
 /* jagan css start  */
 .details-bg {
-  background-image: url("https://kvramanan.com/wp-content/uploads/2023/07/blue_abstract_lines_2-min-scaled.jpg");
+  background-image: url('./Assets/Images/bg-img-ram.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

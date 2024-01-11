@@ -22,6 +22,8 @@ import profile1 from '../Assets/Images/profile1.png'
 import profile2 from '../Assets/Images/profile-2.png'
 import phoneicon from '../Assets/Images/icons8-phone-64.png'
 import mailicon from '../Assets/Images/icons8-email-64.png'
+import kvram from '../Assets/Images/kvram.png'
+import kvram2 from '../Assets/Images/kvram2 (2).jpg'
 
 function Home() {
   let gotoTop = (secID) => {
@@ -45,11 +47,11 @@ function Home() {
     <div className='overflow-x-hidden find' >
 
       {/* Nav-Start */}
-      <section className='nav-banner' id='home'>
-        <nav class="navbar navbar-expand-lg nav-banner" id='home-nav' data-aos="fade-right" data-aos-duration="600">
+      <section className='nav-banner' id='home' >
+        <nav class="navbar navbar-expand-lg" id='home-nav' data-aos="fade-right" data-aos-duration="600" style={{ backgroundColor: '#060525' }}>
           <div class="container-fluid">
             <Link class="navbar-brand" onClick={() => gotoTop('home')}>
-              <img src={navlogo} alt=" navlogo" />
+              <img src={kvram2} className='kvrlogo' alt=" navlogo" />
             </Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -126,7 +128,8 @@ function Home() {
 
             <div className='col-md-6 text-center'>
               <div className='pb-4 mb-4'>
-                <img src={Ramanan} alt="" className='img-fluid rounded-3' />
+              <img src={kvram} className='img-fluid' alt="" />
+
 
               </div>
 
@@ -154,7 +157,7 @@ function Home() {
       {/* Career-End */}
 
       {/* Technical Start */}
-      <section>
+      <section id='technical'>
         <div className='nav-banner' data-aos="fade-left" data-aos-duration="700">
           <div className='technical-skills mt-2'>
             <div className='container my-5 py-5'>
@@ -401,7 +404,7 @@ function Home() {
       {/* project end */}
 
       {/* Technical details start */}
-      <section id='technical'>
+      <section id='nav-banner'>
         <div className="overflow-hidden">
           <div className="details-bg">
             <div className="container py-5">
@@ -677,7 +680,7 @@ function Home() {
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
                           <div>
-                            <img src={profile2} alt="" className='w-50' />
+                            <img src={profile1} alt="" className='w-50' />
                           </div>
                           <div className='text-light py-3 my-3'>
                             <h4 className='heading9 fw-bold fs-5'>Adam Jones</h4>
