@@ -45,8 +45,8 @@ function Home() {
     <div className='overflow-x-hidden find' >
 
       {/* Nav-Start */}
-      <section className='nav-banner' id='home'>
-        <nav class="navbar navbar-expand-lg nav-banner" id='home-nav' data-aos="fade-right" data-aos-duration="600">
+      <section className='nav-banner' id='home' >
+        <nav class="navbar navbar-expand-lg" id='home-nav' data-aos="fade-right" data-aos-duration="600" style={{ backgroundColor: '#060525' }}>
           <div class="container-fluid">
             <Link class="navbar-brand" onClick={() => gotoTop('home')}>
               <img src={navlogo} alt=" navlogo" />
@@ -401,7 +401,7 @@ function Home() {
       {/* project end */}
 
       {/* Technical details start */}
-      <section id='technical'>
+      <section id='nav-banner'>
         <div className="overflow-hidden">
           <div className="details-bg">
             <div className="container py-5">
@@ -677,7 +677,7 @@ function Home() {
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
                           <div>
-                            <img src={profile2} alt="" className='w-50' />
+                            <img src={profile1} alt="" className='w-50' />
                           </div>
                           <div className='text-light py-3 my-3'>
                             <h4 className='heading9 fw-bold fs-5'>Adam Jones</h4>
