@@ -27,7 +27,7 @@ import kvram2 from '../Assets/Images/kvram2 (2).jpg'
 
 function Home() {
   let gotoTop = (secID) => {
-    const element = document.getElementById(secID); 
+    const element = document.getElementById(secID);
     const navbarElement = document.querySelector('.navbar');
 
     if (navbarElement) {
@@ -87,13 +87,13 @@ function Home() {
                   <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('contact')} >Contact</a>
                 </li>
 
-                <a href='https://www.instagram.com/kalyana_venkata_ramanan/'>
+                <a href='https://www.instagram.com/kalyana_venkata_ramanan/' target="_blank">
                   <li class="nav-item px-2 pt-1">
                     {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                     <img src={Instaicon} alt="" className='head-icon' />
                   </li>
                 </a>
-                <a href='https://www.linkedin.com/in/kalyan-durai-664390274/'>
+                <a href='https://www.linkedin.com/in/kalyan-durai-664390274/' target="_blank">
                   <li class="nav-item pt-1">
                     {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                     <img src={Linkedin} alt="img-fluid" className='head-icon' />
@@ -117,7 +117,7 @@ function Home() {
                 <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
                 <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
                 <div className='py-4 my-4'>
-                  <button className='banner-bts fw-bold fs-5 heading5' onClick={() => window.open('https://wa.me/9092570489', '_blank')}>
+                  <button className='banner-bts fw-bold fs-5 heading5' onClick={() => window.open('https://wa.me/9092570489', '_blank')} target="_blank">
                     Contact Me on WhatsApp
                   </button>
 
@@ -128,7 +128,7 @@ function Home() {
 
             <div className='col-md-6 text-center'>
               <div className='pb-4 mb-4'>
-              <img src={kvram} className='img-fluid rounded-3' alt="" />
+                <img src={kvram} className='img-fluid rounded-3' alt="" />
 
 
               </div>
@@ -953,7 +953,7 @@ function Home() {
                     <h3 className='heading7 fw-bold'>Address</h3>
                     <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Kancheepuram.</p>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
-                      <a className='btn btn-primary px-4 py-2' href='https://maps.app.goo.gl/1SwzHfrC71xg3Equ9'>Location</a>
+                      <a className='btn btn-primary px-4 py-2' href='https://maps.app.goo.gl/1SwzHfrC71xg3Equ9' target="_blank">Location</a>
                     </div>
                   </div>
                 </div>
@@ -967,7 +967,7 @@ function Home() {
                     <h3 className='heading7 fw-bold'>Phone</h3>
                     <p className='heading6'>+91 90925 70489</p>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
-                      <a className='btn btn-primary px-4 py-2' href='tel:9092570489'>Contact here</a>
+                      <a className='btn btn-primary px-4 py-2' href='tel:9092570489'  target="_blank">Contact here</a>
                     </div>
                   </div>
                 </div>
@@ -981,8 +981,9 @@ function Home() {
                     <h3 className='heading7 fw-bold'>E-Mail</h3>
                     <p className='heading6'>kalyanaramanan66@gmail.com</p>
                     <div className='btn1 pt-2 heading5 text-center text-lg-start'>
-                      <a className='btn btn-primary px-4 py-2' href='mailto:kalyanaramanan66@gmail.com'>Go to</a>
+                      <a className='btn btn-primary px-4 py-2' href='mailto:kalyanaramanan66@gmail.com' target="_blank">Go to</a>
                     </div>
+
                   </div>
                 </div>
               </div>
